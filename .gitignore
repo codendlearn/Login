@@ -1,0 +1,16 @@
+﻿.vs
+*.zip
+*.dll
+bin
+*/bin
+client/.vscode
+**/bin
+Login.IdentityServer/obj/publish
+**/Properties
+**/publish
+**/obj
+obj
+bin
+
+**/bin/*
+**/obj/*

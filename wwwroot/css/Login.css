@@ -1,0 +1,120 @@
+.btn.btn-success {
+	color: #fff;
+    padding: 2% 10%;
+    font-size: 16px;
+    border-radius: 50px;
+    border: none;
+    background-color: #ff4500;
+    font-family: unset;
+}
+.left-section {
+	background-image: url(http://ec2-52-66-249-211.ap-south-1.compute.amazonaws.com/Pattern.9ac67f888f3ef24353f8.png);
+    background-repeat: repeat-x;
+    background-position: bottom;
+    height: 100vh;
+	overflow: auto;
+}
+.left-section .section-content {
+	text-align: center;
+    color: #000;
+}
+.left-section .top-content {
+	margin-bottom: 1.5rem !important;
+}
+.left-section .welcome-heading {
+	font-size: 20px;
+    color: #fff;
+    background-color: #083038;
+    padding: 10px;
+	margin-bottom: 1.5rem !important;
+}
+.left-section .input-group {
+	display: flex;
+    background: #fff;
+    width: 100%;
+    color: #424242;
+    border-radius: 50px;
+    text-align: left;
+    overflow: hidden;
+    border: 2px solid #424242;
+    font-family: sans-serif;
+}
+.left-section .input-icon {
+	padding: 10px;
+    background: #fff;
+    color: #083038;
+    min-width: 50px;
+    text-align: center;
+    border-right: 2px solid #424242;
+    font-size: 22px;
+}
+.left-section .input-field {
+	border: none;
+    font-size: 14px;
+    color: #424242;
+    padding: 12px 10px;
+    -webkit-box-flex: 1;
+    flex: 1;
+    background: #fff;
+    outline: 0;
+}
+.left-section .round-checkbox {
+	border: 2px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 28px;
+    position: absolute;
+    width: 28px;
+    display: -webkit-box;
+    display: flex;
+}
+.left-section .round-checkbox:checked {
+	background-color: #159bbb;
+    border-color: #159bbb;
+}
+
+.right-section {
+	display: block !important;
+	
+	background-image: url("http://ec2-52-66-249-211.ap-south-1.compute.amazonaws.com/Backgrounds.ef68fbb2b1ad15aaf2dd.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100%;
+}
+.right-section .section-content {
+	position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+	
+	text-align: center;
+    color: #000;
+}
+.right-section .app-body {
+	position: relative;
+    top: 21%;
+	width: 500px;
+}
+.right-section .app-logo{
+	background-image: url(http://ec2-52-66-249-211.ap-south-1.compute.amazonaws.com/Apne11_002.ab509d2f67874332b41e.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 10%;
+    margin-left: 6%;
+}
+.right-section .playStore-section {
+	padding-top: 7%;
+}
+.right-section .download-text {
+	color: #083038;
+    text-align: left;
+    padding-left: 5%;
+    padding-bottom: 1%;
+    font-weight: 700;
+	font-size: 25px;
+}
+.right-section .mobile-logo {
+	width: 80%;
+}

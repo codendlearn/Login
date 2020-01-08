@@ -1,0 +1,92 @@
+﻿@model LoginViewModel
+
+<partial name="_ValidationSummary" />
+
+<div class="row">
+    <div class="col-md-5 left-section">
+        <div class="section-content">
+            <div class="top-content">
+                <p class="welcome-heading">Welcome To</p>
+                <a href="#">
+                    <img alt="Apne11 Logo" class="site-logo" src="http://ec2-52-66-249-211.ap-south-1.compute.amazonaws.com/assets/img/brand-logo-1.png">
+                </a>
+            </div>
+            <div class="user-form">
+                <form asp-route="Login">
+                    <input type="hidden" asp-for="ReturnUrl" />
+                    <div class="form-group">
+                        <div class="input-group">
+                            <i class="fa fa-user input-icon"></i>
+                            <input class="input-field" name="username" type="text" asp-for="Username" placeholder="Email Address" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <i class="fa fa-key input-icon"></i>
+                            <input class="input-field" name="password" type="password"  asp-for="Password" placeholder="Password" />
+                            <i class="fa fa-eye-slash fa-2x" id="fa-eye-slash" style="display: block;"></i>
+                            <i class="fa fa-eye fa-2x" id="fa-eye" style="display: none;"></i>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" name="button" class="btn btn-success" value="login">LOGIN</button>
+                    </div>
+                </form>
+            </div>
+            <div class="social-form">
+                @*@if (Model.VisibleExternalProviders.Any())
+                {
+                    <div class="col-md-6 col-sm-6 external-providers">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">External Login</h3>
+                            </div>
+                            <div class="panel-body">
+                                <ul class="list-inline">
+                                    @foreach (var provider in Model.VisibleExternalProviders)
+                                    {
+                                        <li>
+                                            <a class="btn btn-default"
+                                               asp-controller="External"
+                                               asp-action="Challenge"
+                                               asp-route-provider="@provider.AuthenticationScheme"
+                                               asp-route-returnUrl="@Model.ReturnUrl">
+                                                @provider.DisplayName
+                                            </a>
+                                        </li>
+                                    }
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                }*@
+            </div>
+            <div class="">
+            </div>
+        </div>
+    </div>
+    <div class="col-md-7 right-section">
+        <div class="section-content">
+            <div class="app-body">
+                <div class="app-logo"></div>
+                <div class="playStore-section">
+                    <div class="download-text">Download The App</div>
+                    <div class="col-md-6">
+                        <a href="http://gtnewlive.s3.us-west-1.amazonaws.com/mobile-app/android/apne11.apk">
+                            <img class="mobile-logo" src="http://ec2-52-66-249-211.ap-south-1.compute.amazonaws.com/assets/img/androidDwn2.png" />
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="https://apps.apple.com/in/app/apne11/id1475348161">
+                            <img class="mobile-logo" src="http://ec2-52-66-249-211.ap-south-1.compute.amazonaws.com/assets/img/ios-phone.png" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="~/css/Login.css" rel="stylesheet">
